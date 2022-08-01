@@ -28,5 +28,5 @@ Simply open the **Kariton.apk** file to allow the application to be installed on
 
 ***4. Retrofit*** -	This was implemented to facilitate sending the application's request to the backend in order to get the list of products and send it back to the application as a response.
 
-***5. Picasso*** -	Picasso was implemented to easily retrieve the image file to be shown based on the URL provided in the response.
+***5. Picasso*** -	Picasso was implemented to easily retrieve the image file to be shown based on the URL provided by the backend.
 

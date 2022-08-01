@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_marginTop="50dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Button to open Shop Activity -->
+        <LinearLayout
+            android:id="@+id/clickerShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="ClickShop"
+            android:clickable="true"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/clickerShopIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_shopping_bag_24"/>
+
+            <TextView
+                android:id="@+id/clickerShopLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SHOP"
+                android:padding="10dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/project_teal"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+
+        <!-- Button to open Cart Activity -->
+        <LinearLayout
+            android:id="@+id/clickerCart"
+            android:layout_below="@id/clickerShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="ClickCart"
+            android:clickable="true"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/clickerCartIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_shopping_cart_24"/>
+
+            <TextView
+                android:id="@+id/clickerCartLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="YOUR KARITON"
+                android:padding="10dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/project_teal"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+        <!-- Button to open Favorites Activity -->
+        <LinearLayout
+            android:id="@+id/clickerFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:onClick="ClickFavorite"
+            android:clickable="true"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/clickerFavoriteIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_favorite_filled"/>
+
+            <TextView
+                android:id="@+id/clickerFavoriteLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="YOUR FAVORITES"
+                android:textColor="@color/project_teal"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

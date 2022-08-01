@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Image View of the Product's Image -->
+            <ImageView
+                android:id="@+id/iv_productImage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_gravity="center"
+                android:src="@drawable/item_placeholder"/>
+
+            <!-- Text View of the discount -->
+            <TextView
+                android:id="@+id/tv_discount"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/project_teal"
+                android:textColor="@color/white"
+                android:text="-100%"
+                android:textStyle="bold"
+                android:paddingVertical="1dp"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="10dp">
+
+
+
+            <!-- Product Info -->
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Text View of the Product's Name -->
+                    <TextView
+                        android:id="@+id/tv_productName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRODUCT NAME"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size: "
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12dp"/>
+
+                    <!-- Text View that will display the selected size by the user -->
+                    <TextView
+                        android:id="@+id/tv_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SIZE"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12dp"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <!-- Button to decrease quantity -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDecrease"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:enabled="false"/>
+
+                    <!-- Text View of the Item's quantity in the cart -->
+                    <TextView
+                        android:id="@+id/tv_quantity"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <!-- Button to increase quantity -->
+                    <Button
+                        android:id="@+id/btnIncrease"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:text="+"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Text View of the current price -->
+                    <TextView
+                        android:id="@+id/tv_salePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sale Price"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"/>
+
+                    <!-- Text view of the original price -->
+                    <TextView
+                        android:id="@+id/tv_originalPrice"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Original Price"
+                        android:textColor="@color/gray"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Image button that deletes the item from the cart -->
+        <ImageButton
+            android:id="@+id/btnRemoveItem"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_close_24"
+            android:backgroundTint="@color/project_teal"
+            android:layout_alignParentEnd="true"/>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

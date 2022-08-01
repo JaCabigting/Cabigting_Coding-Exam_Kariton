@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Including the layout for the toolbar with the back button -->
+        <include
+            layout="@layout/view_page_toolbar_layout"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="RECOMMENDED FOR YOU"
+            android:textColor="@color/project_teal"
+            android:textStyle="bold"
+            android:textSize="28dp"/>
+
+        <!-- Layout that shows the items recommended to the user -->
+        <GridView
+            android:id="@+id/gvRecommendationsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            android:padding="10dp">
+        </GridView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

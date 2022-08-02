@@ -158,7 +158,7 @@ public class FavoritesAdapter extends ArrayAdapter<FavoriteItem> {
     // If button is pressed, this deletes the item from the favorites
     private void btnFavoriteAction(FavoriteItem item){
         handler.deleteItemFromFavorite(item);
-        Toast.makeText(context, item.getName() + " removed from wishlist.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, item.getName() + " removed from favorites.", Toast.LENGTH_SHORT).show();
 
     }
 

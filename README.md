@@ -30,4 +30,6 @@ Simply open the **Kariton.apk** file to allow the application to be installed on
 
 ***5. Picasso*** -	Picasso was implemented to easily retrieve the image file to be shown based on the URL provided by the backend.
 
-##### To view more about the decisions made during the development of the mobile application, feel free to open the ***Cabigting_Kariton_Report.pdf*** file.
+##### User Guide can be found in the Kariton - Quick Start Guide.pdf file
+
+###### To view more about the decisions made during the development of the mobile application, feel free to open the ***Cabigting_Kariton_Report.pdf*** file.
